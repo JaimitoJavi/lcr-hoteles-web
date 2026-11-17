@@ -1,0 +1,122 @@
+{
+  "hotel-tierra-biescas": [
+    {
+      "es": {
+        "title": "Promoción ‘Pirineo con niños’",
+        "desc": "15% dto con niños hasta 12 años"
+      },
+      "en": {
+        "title": "Pyrenees with Kids",
+        "desc": "15% discount for children up to 12"
+      },
+      "fr": {
+        "title": "Pyrénées avec enfants",
+        "desc": "15 % de réduction pour les enfants"
+      }
+    },
+    {
+      "es": {
+        "title": "Exclusiva Gran Suite",
+        "desc": "-15%"
+      },
+      "en": {
+        "title": "Exclusive Grand Suite",
+        "desc": "-15%"
+      },
+      "fr": {
+        "title": "Suite Grand Luxe Exclusive",
+        "desc": "-15%"
+      }
+    },
+    {
+      "es": {
+        "title": "Precio Exclusivo Web",
+        "desc": "-5%"
+      },
+      "en": {
+        "title": "Exclusive Web Offer",
+        "desc": "-5%"
+      },
+      "fr": {
+        "title": "Offre exclusive web",
+        "desc": "-5%"
+      }
+    },
+    {
+      "es": {
+        "title": "Paga ahora y ahorra",
+        "desc": "-15%"
+      },
+      "en": {
+        "title": "Pay now and save",
+        "desc": "-15%"
+      },
+      "fr": {
+        "title": "Payez maintenant et économisez",
+        "desc": "-15%"
+      }
+    }
+  ],
+  "hotel-posada-de-ruba": [
+    {
+      "es": {
+        "title": "Oferta Exclusiva web",
+        "desc": "-2%"
+      },
+      "en": {
+        "title": "Exclusive Web Offer",
+        "desc": "-2%"
+      },
+      "fr": {
+        "title": "Offre exclusive web",
+        "desc": "-2%"
+      }
+    },
+    {
+      "es": {
+        "title": "Paga ahora y ahorra",
+        "desc": "-12%"
+      },
+      "en": {
+        "title": "Pay now and save",
+        "desc": "-12%"
+      },
+      "fr": {
+        "title": "Payez maintenant et économisez",
+        "desc": "-12%"
+      }
+    }
+  ],
+  "apartamentos-lcr-boutique": [
+    {
+      "es": {
+        "title": "Precio Exclusivo Web",
+        "desc": "-5%"
+      },
+      "en": {
+        "title": "Web Exclusive Offer",
+        "desc": "-5%"
+      },
+      "fr": {
+        "title": "Offre exclusive web",
+        "desc": "-5%"
+      }
+    },
+    {
+      "es": {
+        "title": "Paga ahora y ahorra",
+        "desc": "-15%"
+      },
+      "en": {
+        "title": "Pay now and save",
+        "desc": "-15%"
+      },
+      "fr": {
+        "title": "Payez maintenant et économisez",
+        "desc": "-15%"
+      }
+    }
+  ],
+  "apartamentos-lcr-suites": [],
+  "apartamento-lcr-los-valles": []
+}

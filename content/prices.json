@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-17",
+  "currency": "EUR",
+  "from_per_night": {
+    "hotel-tierra-biescas": {
+      "individual": 54,
+      "estandar": 91,
+      "premium": 98,
+      "junior-suite": 122,
+      "familiar": 122,
+      "suite": 157
+    },
+    "hotel-posada-de-ruba": {
+      "doble-compacta": 64,
+      "doble": 67,
+      "doble-confort": 91,
+      "familiar": 67
+    },
+    "apartamentos-lcr-boutique": {
+      "boutique-estandar": 69
+    },
+    "apartamentos-lcr-suites": {
+      "suites-3": 122,
+      "suites-4": 122
+    },
+    "apartamento-lcr-los-valles": {
+      "apartamento-los-valles": 122
+    }
+  }
+}
