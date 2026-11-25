@@ -1,0 +1,4 @@
+/* OPCIÓN 4 · Pino nocturno — verde bosque casi negro, oro suave, serif Cormorant, portada a la izquierda */
+.t4{--bg:#07140F;--head:#EDF2E6;--ink:#AFC1B5;--acc:#C9A66B;--acc2:#6FA383;--hero-tint:7,20,15;--fh:'Cormorant Garamond',Georgia,serif}
+.t4 h1{font-size:clamp(3rem,8vw,6.4rem)}
+.t4 .hero-img:after{background:linear-gradient(100deg,rgba(7,20,15,.92) 0%,rgba(7,20,15,.45) 48%,rgba(7,20,15,.1) 100%),linear-gradient(180deg,rgba(7,20,15,.55),transparent 30%,rgba(7,20,15,.4) 70%,#07140F 100%)}

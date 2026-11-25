@@ -1,1 +1,9 @@
-{"site_url":"https://www.lcrhoteles.com","mirai_url":"","recaptcha_site_key":""}
+{
+ "site_url": "https://www.lcrhoteles.com",
+ "mirai_url": "https://www.lcrhoteles.com/bookingstep1/?chainSelectorValue={chain}&checkin={checkin}&idtokenprovider=100380221&currency=EUR&idchain=502138&clientCode=&hsri=02080&lang={lang}&nights={nights}&parties={parties}&type=chain&step=1",
+ "recaptcha_site_key": "",
+ "mirai_chain_default": "66013",
+ "mirai_hotels": {},
+ "reviews_links": {},
+ "theme": "11"
+}

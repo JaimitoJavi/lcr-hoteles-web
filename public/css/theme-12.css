@@ -1,0 +1,9 @@
+/* OPCIÓN 12 · Niebla y piedra — gris niebla, azul pizarra y dorado piedra; titulares Archivo ligeros en mayúsculas; portada enmarcada */
+.t12{--bg:#F2F4F4;--head:#1F2D3A;--ink:#55636E;--acc:#B9A47C;--on-acc:#241E12;--acc2:#7C98AA;--hero-tint:31,45,58;--fh:Archivo,Inter,sans-serif;--r:16px}
+.t12 h1,.t12 h2,.t12 h3{font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.t12 h1{font-size:clamp(1.8rem,3.3vw,3rem);line-height:1.15;letter-spacing:.05em;max-width:22ch}.t12 h2{font-size:clamp(1.4rem,2.6vw,2.2rem)}.t12 h3{font-size:1.05rem;letter-spacing:.08em}
+.t12 .hero{margin:12px 14px 0;border-radius:28px;overflow:hidden}.t12 .benefits+.hero{margin-top:12px}
+.t12 .sec.alt{margin:0 14px;border-radius:28px}.t12 .foot{margin:14px;border-radius:28px}
+.t12 .price b,.t12 .from b,.t12 .pct,.t12 .loc-list b,.t12 .rsum b,.t12 .xp-t{font-weight:700;letter-spacing:.02em}
+.t12 .xp-t{text-transform:uppercase;font-size:1rem;letter-spacing:.08em}.t12 .xp.big .xp-t{font-size:1.5rem}
+@media(max-width:700px){.t12 .hero,.t12 .sec.alt,.t12 .foot{border-radius:20px}}

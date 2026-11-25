@@ -1,0 +1,7 @@
+hero.mp4 = vídeo de fondo de la portada (16 s, 1280x720, sin sonido, 2,5 MB).
+Montaje de 4 clips de Pexels (licencia Pexels: uso comercial libre, sin atribución obligatoria):
+  - Vista aérea del Pirineo: https://www.pexels.com/video/scenic-aerial-view-of-pyrenees-mountain-landscape-37330970/
+  - Esquí: https://www.pexels.com/video/a-person-skiing-down-a-snowy-mountain-15861347/
+  - Bici de montaña: https://www.pexels.com/video/back-view-of-mountain-biker-6446216/
+  - Parapente: https://www.pexels.com/video/paragliders-flying-in-a-mountain-landscape-with-low-clouds-13240703/
+Son imágenes de archivo de montaña/Pirineo; no se ha verificado que sean del Valle de Tena. Para cambiarlo, sustituye hero.mp4 (y opcionalmente añade hero.webm).

@@ -24,3 +24,14 @@ No se inventa ningún dato: textos, fotos y precios vienen de la web actual y de
 python3 tools/build.py
 PORT=8080 python3 server.py
 ```
+
+## Rediseño (opciones 4–9) — archivos editables
+- `content/seo.json`: H1, meta title y meta description de la portada (ES/EN/FR).
+- `content/config.json`: `mirai_url` (con `{chain}`, `{checkin}`, `{nights}`, `{parties}`, `{lang}`), `mirai_hotels` (slug → valor de Mirai por hotel, vacío por ahora) y `reviews_links`.
+- `content/experiences.json`: «Experiencias top» de la portada.
+- `content/reviews.json`: reseñas REALES (vacío = la sección no se muestra). `REVIEWS_DEMO=1` solo para ver el diseño en preview.
+- `content/seasons.json`: fechas de cada estación (fotos de Actividades).
+- `content/room_photos.json`: foto de cada habitación (solo la Suite de Tierra de Biescas está verificada).
+- `public/video/hero.mp4` (+ `hero.webm`): vídeo de fondo de la portada. Sin vídeo se ve la foto.
+- `python3 tools/optimize.py` (requiere Pillow): comprime imágenes y crea versiones pequeñas (`public/img/r/`).
+- Preview: `THEME=7 PUB_DIR=preview/7 python3 tools/build.py` y `python3 -m http.server 8107` dentro de `preview/7`.

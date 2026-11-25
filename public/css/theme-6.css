@@ -1,0 +1,16 @@
+/* OPCIÓN 6 · Chalet y brasa — espresso, ámbar y liquen, titulares Archivo, portada enmarcada y cabecera flotante */
+.t6{--bg:#130E0B;--head:#F6EBDD;--ink:#C6B4A2;--acc:#E08A3C;--acc2:#8A9A72;--hero-tint:19,14,11;--fh:Archivo,Inter,sans-serif;--r:30px}
+.t6 h1,.t6 h2,.t6 h3{font-weight:800;letter-spacing:-.03em}
+.t6 h1{font-size:clamp(2.6rem,8vw,6.4rem);line-height:.96}.t6 h2{font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1}.t6 h3{font-size:1.35rem;letter-spacing:-.02em}
+.t6 .top{position:sticky;top:12px;margin:12px auto 0;width:min(1260px,100% - 24px);border-radius:34px;background:rgba(19,14,11,.62);border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 44px rgba(0,0,0,.45)}
+.t6 .top .wrap{width:100%}.t6 .bar{padding-inline:14px;min-height:80px}
+.t6 .hero{margin:-92px 12px 0;border-radius:42px;padding-top:92px;overflow:hidden}
+.t6 .benefits+.hero{margin-top:12px;padding-top:0}.t6 .hero.plain{margin-top:12px;border-radius:42px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.t6 .hero-img:after{background:linear-gradient(180deg,rgba(19,14,11,.5),rgba(19,14,11,.05) 32%,rgba(19,14,11,.5) 70%,#130E0B 100%),linear-gradient(90deg,rgba(224,138,60,.16),transparent 55%)}
+.t6 .eyebrow{background:var(--acc);color:#1a0f07!important;padding:.5em 1em;border-radius:999px;display:inline-block;font-family:Archivo,sans-serif}
+.t6 .bookbar{border-radius:999px;padding:8px 8px 8px 18px}.t6 .bookbar .btn{border-radius:999px}.t6 .stats{border-radius:999px}
+.t6 .benefits{margin:12px 12px 0;border-radius:999px;border:1px solid var(--line);overflow:hidden}.t6 .benefits ul{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:.7em 1.4em;gap:28px;scrollbar-width:none}.t6 .benefits li{white-space:nowrap}
+.t6 .subnav{margin:12px 12px 0;border-radius:999px}.t6 .subnav a{border-bottom:0;border-radius:999px;margin:6px 0}.t6 .subnav a[aria-current]{background:var(--acc);color:#1a0f07}
+.t6 .sec.alt{margin:0 12px;border-radius:42px;border:1px solid var(--line);background:rgba(255,255,255,.035)}
+.t6 .foot{margin:12px;border-radius:42px}
+@media(max-width:700px){.t6 .hero,.t6 .hero.plain,.t6 .sec.alt,.t6 .foot,.t6 .top{border-radius:28px}.t6 .bookbar,.t6 .stats{border-radius:20px}}

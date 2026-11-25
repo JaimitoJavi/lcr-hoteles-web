@@ -8,7 +8,7 @@ Variables de entorno (todas opcionales salvo para el envío real de emails):
   RECAPTCHA_SECRET   si existe, se valida reCAPTCHA v2
   DATA_DIR           carpeta donde se guarda una copia de cada consulta (por defecto ./data)
 """
-import json, os, re, smtplib, time, urllib.parse, urllib.request
+import re, json, os, re, smtplib, time, urllib.parse, urllib.request
 from email.message import EmailMessage
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
@@ -65,9 +65,35 @@ class H(SimpleHTTPRequestHandler):
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "strict-origin-when-cross-origin")
         p = self.path.split("?")[0]
-        if p.startswith(("/img/", "/fonts/", "/css/", "/js/")): self.send_header("Cache-Control", "public, max-age=604800")
+        if p.startswith(("/img/", "/fonts/", "/css/", "/js/", "/video/")): self.send_header("Cache-Control", "public, max-age=604800")
+        if p.startswith("/video/"): self.send_header("Accept-Ranges", "bytes")
         elif p.endswith("/") or p.endswith(".html"): self.send_header("Cache-Control", "public, max-age=300")
         super().end_headers()
+
+    def do_GET(self):
+        """Vídeo con peticiones parciales (Range): obligatorio para que Safari/iPhone lo reproduzcan."""
+        rng, p = self.headers.get("Range"), self.path.split("?")[0]
+        if rng and p.startswith("/video/"):
+            fp = self.translate_path(p)
+            m = re.match(r"bytes=(\d*)-(\d*)$", rng.strip())
+            if m and os.path.isfile(fp) and (m.group(1) or m.group(2)):
+                size = os.path.getsize(fp)
+                a = int(m.group(1)) if m.group(1) else max(0, size - int(m.group(2)))
+                b = int(m.group(2)) if (m.group(1) and m.group(2)) else size - 1
+                b = min(b, size - 1)
+                if a > b or a >= size:
+                    self.send_response(416); self.send_header("Content-Range", f"bytes */{size}"); self.send_header("Content-Length", "0"); self.end_headers(); return
+                self.send_response(206); self.send_header("Content-Type", self.guess_type(fp))
+                self.send_header("Content-Range", f"bytes {a}-{b}/{size}"); self.send_header("Content-Length", str(b - a + 1)); self.end_headers()
+                if self.command != "HEAD":
+                    with open(fp, "rb") as f:
+                        f.seek(a); left = b - a + 1
+                        while left > 0:
+                            chunk = f.read(min(65536, left))
+                            if not chunk: break
+                            self.wfile.write(chunk); left -= len(chunk)
+                return
+        super().do_GET()
 
     def send_error(self, code, message=None, explain=None):
         if code == 404 and os.path.exists(os.path.join(PUBLIC, "404.html")):

@@ -1,0 +1,77 @@
+{
+ "_nota": "Experiencias top de la portada. Editable: imagen (en public/img), estación y nombre en cada idioma. big=true ocupa un hueco grande.",
+ "items": [
+  {
+   "img": "actividades_winter-formigal.webp",
+   "season": "winter",
+   "es": "Esquí y snow en Formigal",
+   "en": "Skiing and snowboarding in Formigal",
+   "fr": "Ski et snowboard à Formigal",
+   "big": true
+  },
+  {
+   "img": "actividades_spring-tirolina.webp",
+   "season": "spring",
+   "es": "Tirolina Hoz en Jaca",
+   "en": "Zip line at Hoz de Jaca",
+   "fr": "Tyrolienne à Hoz de Jaca",
+   "big": false
+  },
+  {
+   "img": "actividades_summer-festival.webp",
+   "season": "summer",
+   "es": "Festival Pirineos Sur",
+   "en": "Pirineos Sur Festival",
+   "fr": "Festival Pirineos Sur",
+   "big": false
+  },
+  {
+   "img": "actividades_summer-ordesa.webp",
+   "season": "summer",
+   "es": "Parque Nacional de Ordesa",
+   "en": "Ordesa National Park",
+   "fr": "Parc national d'Ordesa",
+   "big": false
+  },
+  {
+   "img": "actividades_winter-parapente.webp",
+   "season": "winter",
+   "es": "Vuelo en parapente",
+   "en": "Paragliding",
+   "fr": "Parapente",
+   "big": false
+  },
+  {
+   "img": "actividades_autumn-feria.webp",
+   "season": "autumn",
+   "es": "Feria de Otoño de Biescas",
+   "en": "Biescas Autumn Fair",
+   "fr": "Foire d'automne de Biescas",
+   "big": false
+  },
+  {
+   "img": "actividades_summer-bike.webp",
+   "season": "summer",
+   "es": "Mountain bike",
+   "en": "Mountain biking",
+   "fr": "VTT",
+   "big": false
+  },
+  {
+   "img": "actividades_winter-raqueta.webp",
+   "season": "winter",
+   "es": "Travesía con raquetas",
+   "en": "Snowshoe trek",
+   "fr": "Randonnée en raquettes",
+   "big": false
+  },
+  {
+   "img": "actividades_spring-feria.webp",
+   "season": "spring",
+   "es": "Festival de primavera de Biescas",
+   "en": "Biescas Spring Festival",
+   "fr": "Festival de printemps de Biescas",
+   "big": false
+  }
+ ]
+}

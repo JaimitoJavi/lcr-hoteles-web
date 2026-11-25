@@ -1,0 +1,31 @@
+/* SUAVES Y DE LUJO (opciones 10, 11 y 12) — marfil, piedra y dorado tenue sobre la estructura clara */
+.soft{--r:20px}
+.soft h1,.soft h2,.soft h3{font-weight:500;letter-spacing:.005em}
+.soft h2{font-size:clamp(1.9rem,3.4vw,3rem)}
+.soft .top{background:rgba(255,255,255,.72);border-bottom:1px solid color-mix(in srgb,var(--head) 8%,transparent);box-shadow:none}
+.soft .top.scrolled{background:rgba(255,255,255,.9);box-shadow:0 1px 0 color-mix(in srgb,var(--head) 8%,transparent)}
+.soft nav#nav a,.soft nav#nav .has-sub>button{font-weight:500;letter-spacing:.04em;font-size:.9rem}
+.soft .langs a.on{background:var(--acc);color:var(--on-acc)}
+.soft .benefits{background:color-mix(in srgb,var(--head) 92%,#fff);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
+.soft .hero-img:after{background:linear-gradient(180deg,rgba(var(--hero-tint),.5) 0%,rgba(var(--hero-tint),.05) 34%,rgba(var(--hero-tint),.28) 62%,rgba(var(--hero-tint),.74) 100%),linear-gradient(100deg,rgba(var(--hero-tint),.35),transparent 60%)}
+.soft .hero .eyebrow{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.55);font-weight:500;letter-spacing:.3em;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.soft .hero h1{font-weight:500}
+.soft .btn{background:var(--acc);color:var(--on-acc);box-shadow:0 6px 18px color-mix(in srgb,var(--acc) 30%,transparent);font-weight:600;letter-spacing:.04em}
+.soft .btn:hover{background:color-mix(in srgb,var(--acc) 86%,#000);color:var(--on-acc);box-shadow:0 10px 26px color-mix(in srgb,var(--acc) 40%,transparent)}
+.soft .dock-f{border-radius:18px;box-shadow:0 18px 50px rgba(30,40,45,.22)}
+.soft .dock .f svg{color:var(--acc)}
+.soft .card{border:1px solid color-mix(in srgb,var(--head) 8%,transparent);box-shadow:0 1px 2px rgba(30,40,45,.04),0 18px 40px rgba(30,40,45,.07)}
+.soft .card.tilt{border-color:var(--acc)}
+.soft .price b,.soft .pct,.soft .from b,.soft .loc-list b,.soft .rsum b{color:var(--acc)}
+.soft .loc-list li svg{color:var(--acc)}
+.soft .chips li{border-color:color-mix(in srgb,var(--head) 12%,transparent);font-size:.9rem}
+.soft .sec.alt{background:color-mix(in srgb,var(--acc) 7%,#fff)}
+.soft .xp-s,.soft .s-tabs button[data-s][aria-selected=true]{background:var(--acc);color:var(--on-acc)}
+.soft .seasons .s-tabs button[data-s][aria-selected=true]{background:var(--acc);color:var(--on-acc)}
+.soft .seasons .s-arrow:hover{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
+.soft .foot{background:var(--head)}.soft .foot h2{font-weight:500}
+.soft .subnav a[aria-current]{color:var(--head);border-color:var(--acc)}
+.soft nav#nav a[aria-current],.soft nav#nav .has-sub.on>button{color:var(--acc)}
+.soft .vivid a{color:var(--acc)}
+.soft .club:before{background:linear-gradient(100deg,rgba(var(--hero-tint),.88),rgba(var(--hero-tint),.45) 55%,rgba(var(--hero-tint),.1)),linear-gradient(0deg,rgba(var(--hero-tint),.4),transparent 45%)}
+.soft .hero:not(.home):not(.plain) .hero-img:after{background:linear-gradient(180deg,rgba(var(--hero-tint),.55) 0%,rgba(var(--hero-tint),.35) 40%,rgba(var(--hero-tint),.82) 100%)}

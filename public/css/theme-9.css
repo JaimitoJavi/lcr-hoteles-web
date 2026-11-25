@@ -1,0 +1,12 @@
+/* OPCIÓN 9 · Atardecer — coral y turquesa sobre crema cálida, serif Cormorant, portada enmarcada y cabecera flotante */
+.t9{--bg:#FFF7EF;--head:#3B0F30;--ink:#6B4A5D;--acc:#FF6B4A;--on-acc:#3B0F30;--acc2:#0FA3A3;--hero-tint:59,15,48;--fh:'Cormorant Garamond',Georgia,serif;--r:30px}
+.t9 h1,.t9 h2,.t9 h3{font-weight:600}.t9 h1{font-size:clamp(3rem,8.4vw,6.6rem);line-height:.95}.t9 h3{font-size:1.65rem}
+.t9 .top{position:sticky;top:12px;margin:12px auto 0;width:min(1260px,100% - 24px);border-radius:34px;box-shadow:0 14px 44px rgba(59,15,48,.18);border:1px solid rgba(255,255,255,.7)}
+.t9 .top .wrap{width:100%}.t9 .bar{padding-inline:14px;min-height:80px}
+.t9 .hero{margin:-92px 12px 0;border-radius:44px;padding-top:92px;overflow:hidden}.t9 .benefits+.hero{margin-top:12px;padding-top:0}
+.t9 .hero.plain{margin-top:12px;border-radius:44px}
+.t9 .benefits{margin:12px 12px 0;border-radius:999px;overflow:hidden}.t9 .benefits ul{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:.7em 1.4em;gap:28px;scrollbar-width:none}.t9 .benefits li{white-space:nowrap}
+.t9 .bookbar,.t9 .stats,.t9 .seasonbar{border-radius:999px}.t9 .bookbar{padding:8px 8px 8px 18px}.t9 .bookbar .btn{border-radius:999px}
+.t9 .subnav{margin:12px 12px 0;border-radius:999px;border:0;box-shadow:0 2px 14px rgba(59,15,48,.1)}.t9 .subnav a{border-bottom:0;border-radius:999px;margin:6px 0}.t9 .subnav a[aria-current]{background:var(--acc);color:var(--on-acc)}
+.t9 .sec.alt{margin:0 12px;border-radius:44px}.t9 .foot{margin:12px;border-radius:44px}
+@media(max-width:700px){.t9 .hero,.t9 .hero.plain,.t9 .sec.alt,.t9 .foot,.t9 .top{border-radius:28px}.t9 .bookbar,.t9 .stats,.t9 .seasonbar{border-radius:20px}}

@@ -1,0 +1,5 @@
+{
+ "_como_rellenar": "Solo reseñas REALES y con permiso. items: [{source:'google|tripadvisor|booking', author, avatar:'reviews/archivo.webp'(opcional, en public/img), rating:1-5, date:'2026-08', hotel:'hotel-tierra-biescas', text, photos:['reviews/foto.webp'], url}]. summary: {google:{rating:4.7,count:120,url:'https://...'}} (opcional).",
+ "summary": {},
+ "items": []
+}

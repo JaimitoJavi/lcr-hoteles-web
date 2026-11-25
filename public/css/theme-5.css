@@ -1,0 +1,7 @@
+/* OPCIÓN 5 · Granito y nieve — azul pizarra, hielo y cobre, serif Fraunces, portada centrada */
+.t5{--bg:#0A1620;--head:#EEF3F6;--ink:#A8B9C4;--acc:#E3A56F;--acc2:#7FB2D6;--hero-tint:10,22,32;--fh:Fraunces,Georgia,serif}
+.t5 h1,.t5 h2,.t5 h3{font-weight:500;letter-spacing:-.015em}
+.t5 h1{text-align:center;margin-inline:auto;max-width:15ch;font-size:clamp(2.6rem,7vw,5.4rem)}
+.t5 .hero:not(.plain) .hero-in{display:flex;flex-direction:column;align-items:center;text-align:center}
+.t5 .hero .lead{margin-inline:auto}.t5 .bookbar,.t5 .stats{margin-inline:auto}
+.t5 .hero-img:after{background:radial-gradient(ellipse at center,rgba(10,22,32,.05),rgba(10,22,32,.6) 95%),linear-gradient(180deg,rgba(10,22,32,.5),transparent 35%,rgba(10,22,32,.45) 72%,#0A1620 100%)}

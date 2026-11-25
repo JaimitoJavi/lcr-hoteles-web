@@ -1,0 +1,49 @@
+/* VARIANTES CLARAS DE COLORES VIVOS (opciones 7, 8 y 9) — sobre la estructura de theme-lux.css */
+.vivid{--line:color-mix(in srgb,var(--head) 14%,transparent);--white:#fff;--pine:color-mix(in srgb,var(--acc2) 8%,#fff);--snow:var(--bg);color:var(--ink);background-color:var(--bg);
+  background-image:radial-gradient(900px 520px at 92% -4%,color-mix(in srgb,var(--acc) 16%,transparent),transparent 62%),radial-gradient(800px 520px at -6% 42%,color-mix(in srgb,var(--acc2) 16%,transparent),transparent 62%);background-attachment:fixed}
+.vivid h1,.vivid h2,.vivid h3{color:var(--head)}
+.vivid a{color:var(--acc2)}.vivid a:hover{color:var(--head)}
+.vivid .top{background:rgba(255,255,255,.84);border-bottom:1px solid var(--line)}.vivid .top.scrolled{background:rgba(255,255,255,.96);box-shadow:0 8px 30px rgba(10,30,60,.1)}
+.vivid .logo img{filter:none}
+.vivid nav#nav a,.vivid .tools .tel,.vivid .login,.vivid nav#nav .has-sub>button{color:var(--head)}
+.vivid nav#nav a[aria-current],.vivid nav#nav .has-sub.on>button,.vivid nav#nav a:hover{color:var(--acc2)}
+.vivid .langs a{color:var(--ink)}.vivid .langs a.on{background:var(--head);color:#fff}
+.vivid .burger{border-color:var(--line)}.vivid .burger i,.vivid .burger i:before,.vivid .burger i:after{background:var(--head)}
+@media(min-width:1100px){.vivid nav#nav .sub{background:#fff;border-color:var(--line);box-shadow:0 24px 60px rgba(10,30,60,.2)}.vivid nav#nav .sub a{color:var(--head)}.vivid nav#nav .sub a:hover,.vivid nav#nav .sub a[aria-current]{background:color-mix(in srgb,var(--acc2) 12%,#fff);color:var(--acc2)}}
+.vivid .benefits{background:var(--head);color:#fff;border:0}.vivid .benefits li:before{color:var(--acc)}
+.vivid .hero-img:after{background:linear-gradient(180deg,rgba(var(--hero-tint),.62) 0%,rgba(var(--hero-tint),.1) 34%,rgba(var(--hero-tint),.45) 70%,rgba(var(--hero-tint),.88) 100%),linear-gradient(100deg,color-mix(in srgb,var(--acc2) 38%,transparent),transparent 60%)}
+.vivid .hero h1,.vivid .hero .lead{color:#fff}.vivid .hero .lead{opacity:.96}
+.vivid .hero .eyebrow{color:var(--on-acc)!important;background:var(--acc);padding:.5em 1em;border-radius:999px;display:inline-block}
+.vivid .hero.plain{background:linear-gradient(120deg,var(--head),color-mix(in srgb,var(--acc2) 70%,var(--head)));border:0}.vivid .hero.plain h1{color:#fff}
+.vivid .btn{background:linear-gradient(135deg,var(--acc),color-mix(in srgb,var(--acc) 72%,#fff));color:var(--on-acc);box-shadow:0 10px 28px color-mix(in srgb,var(--acc) 42%,transparent)}.vivid .btn:hover{color:var(--on-acc)}
+.vivid .bookbar{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.5)}.vivid .bookbar label{color:#fff}
+.vivid .stats b,.vivid .stats span{color:#fff}
+.vivid .seasonbar,.vivid .seasonbar .sdetect{color:#fff}.vivid .seasonbar b{color:var(--acc)}
+.vivid .s-tabs button[data-s][aria-selected=true]{background:var(--acc);color:var(--on-acc)}
+.vivid .seasons .s-tabs{color:var(--head)}.vivid .seasons .s-arrow:hover{background:var(--acc2);color:#fff;border-color:var(--acc2)}
+.vivid .seasons .s-tabs button[data-s][aria-selected=true]{background:var(--acc2);color:#fff}
+.vivid .subnav{background:#fff;border-color:var(--line)}.vivid .subnav a{color:var(--head)}.vivid .subnav a[aria-current]{color:var(--acc2);border-color:var(--acc2)}
+.vivid .sec.alt{background:var(--pine);border-color:transparent}
+.vivid .card{background:#fff;border:1px solid var(--line);box-shadow:0 18px 44px rgba(10,30,60,.1);-webkit-backdrop-filter:none;backdrop-filter:none}
+.vivid .card h3 a{color:var(--head)}.vivid .card.tilt{border-color:var(--acc)}
+.vivid .card:after{background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--acc) 22%,transparent),transparent 60%)}
+.vivid .price{color:var(--ink)}.vivid .price b,.vivid .pct{color:var(--acc2)}
+.vivid .chips li{background:#fff;border-color:var(--line);color:var(--head)}
+.vivid .gal figure{border-color:var(--line)}
+.vivid .side{border-color:var(--line);box-shadow:0 24px 60px rgba(10,30,60,.18)}
+.vivid .book{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(10,30,60,.14);color:var(--ink);-webkit-backdrop-filter:none;backdrop-filter:none}
+.vivid .form label{color:var(--head)}.vivid .form input[type=text],.vivid .form input[type=email],.vivid .form input[type=tel],.vivid .form select,.vivid .form textarea,.vivid .form input:not([type]){background:#fff;color:var(--head);border-color:color-mix(in srgb,var(--head) 28%,transparent)}
+.vivid .status{color:var(--head)}
+.vivid .foot{background:var(--head);color:#cfdbe1;border:0}.vivid .foot h2{color:#fff}.vivid .foot a{color:#fff}.vivid .fund img{background:#fff}
+.vivid .strip img{background:#fff}
+
+/* v3 vivid */
+.vivid .dock{--dock-bg:rgba(255,255,255,.95);--dock-ink:var(--head)}.vivid .dock-f{border-color:var(--line);box-shadow:0 24px 70px rgba(10,30,60,.28)}
+.vivid .dock .f{border-right-color:var(--line)}.vivid .dock .f input,.vivid .dock .f select{color-scheme:light}.vivid .dock .f svg{color:var(--acc2)}
+@media(max-width:760px){.vivid .dock{background:linear-gradient(0deg,rgba(255,255,255,.96),rgba(255,255,255,0))}.vivid .dock .f{border-bottom-color:var(--line)}}
+.vivid .from{color:var(--ink)}.vivid .from b{color:var(--acc2)}
+.vivid .formpanel{background:#fff;border-color:var(--line)}
+.vivid .loc-list li{background:#fff}.vivid .loc-list b,.vivid .loc-list li svg{color:var(--acc2)}
+.vivid .rev .rl{color:var(--ink)}.vivid .btn.ghost{color:var(--head)}
+.vivid .club h1,.vivid .club h2,.vivid .club p{color:#fff}
+.vivid .mini-nav{background:#fff}
