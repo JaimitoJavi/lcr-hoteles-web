@@ -39,4 +39,3 @@ PORT=8080 python3 server.py
 ## Despliegue
 Railway está conectado a este repositorio (rama `main`): cada `git push` publica la web automáticamente. Antes de subir, compilar con `python3 tools/build.py`.
 
-_Última verificación del despliegue automático: 2026-11-25._
