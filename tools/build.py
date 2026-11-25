@@ -739,7 +739,7 @@ def activity_ticker(lang):
     return f'<div class="ticker" aria-hidden="true"><ul>{row}{row}</ul></div>'
 
 # ---- experiencias top
-def experiences_block(lang):
+def experiences_block(lang, note=""):
     t = U3[lang]; n = SNAME[lang]; tiles = []
     for e in EXPER.get("items", []):
         if not os.path.exists(os.path.join(ASSETS, "img", e["img"])): continue
@@ -747,7 +747,8 @@ def experiences_block(lang):
         tiles.append(f'<a class="xp{" big" if e.get("big") else ""}" href="{url(lang, "/actividades/")}?estacion={e["season"]}">{img(e["img"], name)}'
                      f'<span class="xp-s">{n[e["season"]]}</span><span class="xp-t">{esc(name)}</span></a>')
     if not tiles: return ""
-    return (f'<section class="sec" id="experiencias"><div class="wrap wideblock"><h2>{t["exp"]}</h2><p class="lead2">{t["exp_lead"]}</p>'
+    nt = ("<p class=\"note\">" + esc(note) + "</p>") if note else ""
+    return (f'<section class="sec" id="experiencias"><div class="wrap wideblock"><h2>{t["exp"]}</h2><p class="lead2">{t["exp_lead"]}</p>{nt}'
             f'<div class="xps">{"".join(tiles)}</div><p><a class="btn sm" href="{url(lang, "/actividades/")}">{t["exp_all"]}</a></p></div></section>')
 
 # ---- club de lujo (inicio) y reseñas
@@ -858,13 +859,10 @@ def build_home_lux(lang):
     club, explora, act, insta = find(r"club"), find(r"explora|explore|explorez"), find(r"^(actividades|activities|activités)$"), find(r"@pirineohuesca")
     b = [benefits_strip(pre), hero(lang, seo.get("h1") or lead["title"], lead["title"], lead["paras"][0] if lead["paras"] else "", ("__video__", ""), None, "home"),
          f'<section class="sec" id="alojamientos"><div class="wrap wideblock"><h2>{t["stays"]}</h2><div class="cards five snap">{"".join(cards)}</div></div></section>']
-    if explora:
-        sd = "entorno_intro-01.webp" if os.path.exists(os.path.join(ASSETS, "img", "entorno_intro-01.webp")) else None
-        b.append(render_section(explora, side=sd))
     if act and SEASONS:
         intro = next((c["ps"][0] for c in act["cards"] if c["ps"]), "")
         b.append(render_section(dict(act, cards=[], subs=[], paras=[intro] if intro else act["paras"]), season_block(lang) + f'<p><a class="btn sm" href="{url(lang, "/actividades/")}">{u["actividades"]}</a></p>'))
-    b.append(experiences_block(lang))
+    b.append(experiences_block(lang, " ".join(explora["paras"][:1]) if explora else ""))
     if insta:
         ex = '<div class="gal insta">' + "".join(f"<figure>{img(f'tpl_instagram-0{i}.webp')}</figure>" for i in range(6)) + "</div>"
         b.append(render_section(dict(insta, title="Instagram " + insta["title"]), ex))

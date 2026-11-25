@@ -66,3 +66,5 @@ nav#nav .sub{list-style:none;margin:0;padding:0 0 0 14px;display:grid}
 .card.act{padding:0;overflow:hidden}.card.act .thumb img{aspect-ratio:4/3}.card.act h3{font-size:1.15rem;margin:0;padding:14px 18px 18px}
 .cards.acts.snap .card{flex-basis:min(260px,70vw)}
 .hero-img{z-index:0}.hero-in{z-index:3}
+
+.xps{margin-top:1.4rem}.sec .note{max-width:70ch;font-size:.95rem;opacity:.8;margin-top:.6rem}
