@@ -35,3 +35,6 @@ PORT=8080 python3 server.py
 - `public/video/hero.mp4` (+ `hero.webm`): vídeo de fondo de la portada. Sin vídeo se ve la foto.
 - `python3 tools/optimize.py` (requiere Pillow): comprime imágenes y crea versiones pequeñas (`public/img/r/`).
 - Preview: `THEME=7 PUB_DIR=preview/7 python3 tools/build.py` y `python3 -m http.server 8107` dentro de `preview/7`.
+
+## Despliegue
+Railway está conectado a este repositorio (rama `main`): cada `git push` publica la web automáticamente. Antes de subir, compilar con `python3 tools/build.py`.
